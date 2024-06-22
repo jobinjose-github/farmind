@@ -1,0 +1,40 @@
+<div class="main">
+  <header class="header">
+    <img src="logo.png" alt="" srcset="">
+    <div class="contributors">
+      <button *ngFor="let contributor of contributors.slice(0, 6); let i = index">
+        <img src="{{contributor.avatar_url}}" alt="">
+        <button>Button 1</button>
+        <button>Button 2</button>
+      </button>
+      <button class="extra-contributors" style="width: 8rem !important; ">
+        <p *ngIf="contributors.length>5">{{ contributors.length }}+ contributors</p>
+        <p *ngIf="contributors.length<=5">{{ contributors.length }} contributor</p>
+      </button>
+    </div>
+
+  </header>
+  <div class="container">
+    <section class="home">
+      <h5>EMPOWERING FARMERS WITH CUTTING-EDGE TECHNOLOGIES</h5>
+      <br>
+      <h1>AI-POWERED</h1> <br><br>
+      <img src="plant.png" alt="">
+      <br>
+      <h1 class="home-main-text">AGRICULTURE AT YOUR FINGERTIPS</h1>
+      <br>
+      <h3>Harnessing technology for smarter agricultureinvolves leveraging cutting-edge innovations like <br>AI,IOT
+        and data analytics to enhance decision-making.</h3>
+      <br><br>
+      <a href="https://github.com/jobinjose-github/farmind" target="_blank">Contribute Now<span
+          class="material-symbols-rounded">
+          north_east
+        </span></a>
+      <br>
+
+    </section>
+  </div>
+  <footer>
+    <p>&#64;2024 Farmind</p>
+  </footer>
+</div>
